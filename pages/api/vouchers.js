@@ -23,7 +23,7 @@ var charactersLength = characters.length;
 var accepedVouchers=0
 var rejectedVouchers =0  // to roughly check the code's repetation rate
 
-while (accepedVouchers<40000){
+while (accepedVouchers<1000){
 var voucher = ""
 for ( var i = 0; i < 10 ; i++ ) {
     voucher += characters.charAt(Math.floor(Math.random() * charactersLength));
