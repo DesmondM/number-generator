@@ -15,14 +15,13 @@ export default function Home(data) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Voucher Number Generator
+          Voucher Numbers Generator
         </h1>
-          <Link href="/about">
-            <a><h3>Vouchers</h3></a>
+          <Link href="/api/vouchers">
+            <a><h2>Click to Here to Get Vouchers</h2></a>
           </Link>
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          
         </p>
 
         <div className={styles.grid}>
