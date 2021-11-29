@@ -8,7 +8,7 @@ const existConsecutives = (str)=>{
     
     for(let i=0; i<str.length-2; i++){
         if(str[i]==str[i+1]&& str[i]==str[i+2]){
-          //  console.log("There are consecutive " + str[i] +"'s");
+          //  3consecutive similar charachers;
             return true
             break
         }
@@ -29,10 +29,10 @@ for ( var i = 0; i < 10 ; i++ ) {
     voucher += characters.charAt(Math.floor(Math.random() * charactersLength));
 }
 if (existConsecutives(voucher)){
-     //console.log(voucher + " Bad Voucher ")
+     //with consecutive characters
      rejectedVouchers++;
 }else{
-    //console.log(voucher + " Good voucher ")
+    //voucher not already in array, add it
     if(vouchers.indexOf(voucher)===-1){
         vouchers.push(voucher);
         accepedVouchers++;
